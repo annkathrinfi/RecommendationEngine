@@ -4,10 +4,8 @@ Third project for Udacity Data Science Nanodegree. A recommendation engine was b
 ## **Table of Contents:**
 1. [Project Overview](README.md#project-Overview)
 2. [File Description](README.md#file-description)
-3. [Instructions](README.md#Instructions)
-4. [Libraries used](README.md#libraries-used)
-5. [Results](README.md#results)
-6. [Licensing, Acknowledgements](README.md#licensing-acknowledgements)
+3. [Libraries used](README.md#libraries-used)
+4. [Licensing, Acknowledgements](README.md#licensing-acknowledgements)
 
 ## **Project Overview**<br/>
 In this project I will analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles  they will like. The following steps are included in the code:<br/>
