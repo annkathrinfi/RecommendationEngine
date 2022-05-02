@@ -1,4 +1,4 @@
-# RecommendationEngine
+# Recommendation Engine
 Third project for Udacity Data Science Nanodegree. A recommendation engine was built, including rank-based recommendations, user-user based collaborative filtering and matix factorization.
 
 ## **Table of Contents:**
@@ -12,16 +12,16 @@ Third project for Udacity Data Science Nanodegree. A recommendation engine was b
 ## **Project Overview**<br/>
 In this project I will analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles  they will like. The following steps are included in the code:
 
-I. Exploratory Data Analysis: 
+###I. Exploratory Data Analysis: 
 Data preparation, distribution of user-article-interactions and most viewed articles
 
-II. Rank Based Recommendations: 
+###II. Rank Based Recommendations: 
 Find the most popular articles simply based on the most interactions. Since there are no ratings for any of the articles, it is easy to assume the articles with the most interactions are the most popular. These are then the articles could be recommend to new users.
 
-III. User-User Based Collaborative Filtering:
+###III. User-User Based Collaborative Filtering:
 In order to build more personal recommendations for the users of IBM's platform, I match users that are similar in terms of the items they have interacted with. These items are then recommended to the similar users. 
 
-IV. Matrix Factorization:
+###IV. Matrix Factorization:
 Finally, I will complete a machine learning approach to building recommendations. Using the user-item interactions, a matrix decomposition is built to get an idea of how well new articles are predicted/recommended for an individual.
 
 ## **File Description**<br/>
@@ -37,11 +37,7 @@ Following libraries were used:<br/>
 - Seaborn<br/>
 - scikit-learn<br/>
 
-## **Results**<br/>
-The end result is a web app powered by the supervised machine learning model which contains visualizations of the disaster data and classfies newly entered messages into different groups.<br/>
-Ex: Type:  'we are more than 50 people on the street. Please help us find tent and food' & click 'Classify Message'-Button<br/>
-
 ## **Licensing, Acknowledgements**<br/>
-Thanks to real life disaster messages data from Appen.<br/>
-Thanks to Udacity for providing knowledge on Data Engineering (ETL/NLP/ML Pipelines) and a platform to work on this project.<br/>
+Thanks to IBM for providing the data.<br/>
+Thanks to Udacity for providing knowledge on Recommendation Engines and a platform to work on this project.<br/>
 
