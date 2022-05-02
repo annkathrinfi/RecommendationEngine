@@ -1,5 +1,5 @@
 # RecommendationEngine
-Experimental Design &amp; Recommendations Project of Udacity Data Scientist Nanodegree
+Third project for Udacity Data Science Nanodegree. A recommendation engine was built, including rank-based recommendations, user-user based collaborative filtering and matix factorization.
 
 ## **Table of Contents:**
 1. [Project Overview](README.md#project-Overview)
@@ -10,47 +10,32 @@ Experimental Design &amp; Recommendations Project of Udacity Data Scientist Nano
 6. [Licensing, Acknowledgements](README.md#licensing-acknowledgements)
 
 ## **Project Overview**<br/>
+In this project I will analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles  they will like. The following steps are included in the code:
 
-In this project, data provided by [Appen](https://appen.com/) are used to build a model for an API that classifies disaster messages. <br/>
-The data contains pre-labeled text messages that were sent during disaster events. <br/>
-Objective is to prepare the data with ETL(Extract, Transform, Load) pipeline & then use a ML(Machine Learning) pipeline to build a supervised learning model to categorize the events. This will help emergency workers to send the messages to appropriate disaster relief agency.
+I. Exploratory Data Analysis: 
+Data preparation, distribution of user-article-interactions and most viewed articles
+
+II. Rank Based Recommendations: 
+Find the most popular articles simply based on the most interactions. Since there are no ratings for any of the articles, it is easy to assume the articles with the most interactions are the most popular. These are then the articles could be recommend to new users.
+
+III. User-User Based Collaborative Filtering:
+In order to build more personal recommendations for the users of IBM's platform, I match users that are similar in terms of the items they have interacted with. These items are then recommended to the similar users. 
+
+IV. Matrix Factorization:
+Finally, I will complete a machine learning approach to building recommendations. Using the user-item interactions, a matrix decomposition is built to get an idea of how well new articles are predicted/recommended for an individual.
 
 ## **File Description**<br/>
-
 The following files store the data used in this project:
-1) disaster_messages.csv: Messages dataset containing 4 columns including the message id, translated message, original message, and the type of message (e.g. news, social media).<br/>
-2) disaster_cateogires.csv: Categories dataset containing 2 columns including the message id and the category(ies) of the message.<br/>
-3) DisasterResponse.db: SQLite database where the wrangled data is loaded to by the ETL script and from which the training and test data is loaded from in the ML pipeline script.<br/>
-
-There are three python scripts used to deploy on the workspace:<br/>
-1) process_data: Contains functions with executed code from ETL Pipeline<br/>
-2) train_classifer: Contains functions with executed code from ML Pipeline<br/>
-3) run: Contains model pkl file and code for visualizations to run the web app<br/>
-
-## **Instructions**<br/>
-
-1) To run ETL pipeline that cleans data and stores in database:<br/>
-python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db<br/>
-2) To run ML pipeline that trains classifier and saves<br/>
-python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl<br/>
-3) To run web app in the app's directory<br/>
-python run.py<br/>
-4) URL to see visualization<br/>
-http://localhost:3000/<br/>
-
+1) user-item-interactions.csv: file contains user interaction. <br/>
+2) articles_community.csv: file contains articles description. <br/>
 
 ## **Libraries Used**<br/>
-
 Following libraries were used:<br/>
-Plotly<br/>
-joblib<br/>
-Pandas<br/>
-Numpy<br/>
-nltk<br/>
-flask<br/>
-sqlalchemy<br/>
-sys<br/>
-scikit-learn<br/>
+- Nltk<br/>
+- Pandas<br/>
+- Progressbar<br/>
+- Seaborn<br/>
+- scikit-learn<br/>
 
 ## **Results**<br/>
 The end result is a web app powered by the supervised machine learning model which contains visualizations of the disaster data and classfies newly entered messages into different groups.<br/>
