@@ -12,16 +12,16 @@ Third project for Udacity Data Science Nanodegree. A recommendation engine was b
 ## **Project Overview**<br/>
 In this project I will analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles  they will like. The following steps are included in the code:<br/>
 
-### I. Exploratory Data Analysis: <br/>
+#### I. Exploratory Data Analysis: <br/>
 Data preparation, distribution of user-article-interactions and most viewed articles
 
-### II. Rank Based Recommendations: <br/>
+#### II. Rank Based Recommendations: <br/>
 Find the most popular articles simply based on the most interactions. Since there are no ratings for any of the articles, it is easy to assume the articles with the most interactions are the most popular. These are then the articles could be recommend to new users.
 
-### III. User-User Based Collaborative Filtering:<br/>
+#### III. User-User Based Collaborative Filtering:<br/>
 In order to build more personal recommendations for the users of IBM's platform, I match users that are similar in terms of the items they have interacted with. These items are then recommended to the similar users. 
 
-### IV. Matrix Factorization:<br/>
+#### IV. Matrix Factorization:<br/>
 Finally, I will complete a machine learning approach to building recommendations. Using the user-item interactions, a matrix decomposition is built to get an idea of how well new articles are predicted/recommended for an individual.
 
 ## **File Description**<br/>
